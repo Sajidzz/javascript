@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debugging javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var debugging = true;
+        var whichImage = "widget";
+
+        if (debugging)
+        alert ("Calls swapImage() with argument: " + whichImage);
+        var swapStatus = swapImage(whichImage);
+
+        if ( debugging)
+        alert (" Exits swapImages() with swapStatus= " + swapStatus);
+    </script>
+</body>
+</html>
