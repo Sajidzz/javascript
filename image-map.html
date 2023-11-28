@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image map javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function showTutorial(name) {
+            document.myform.stage.value = name; 
+        }
+    </script>
+
+    <form name="myform">
+        <input type="text" name="stage" size="20">
+    </form>
+
+    <img src="usemap.gif" alt="">
+    <map name="tutorials">
+        <area shape="poly"
+        coords = "74,0,113,29,98,72,52,72,38,27";
+        href="#";
+        target="_self";
+        onmouseover="showTutorial('perl')"
+        onmouseout="showTutorial('')" />
+
+        <area shape="react"
+        coords = "22,83,126,125";
+        href="#";
+        target="_self";
+        onmouseover="showTutorial('html')";
+        onmouseout="showTutorial('')" />
+
+        <area shape="circle"
+        coords = "73,168,32";
+        href="#";
+        target="_self";
+        onmouseover="showTutorial('php')";
+        onmouseout="showTutorial('')" />
+    </map>
+</body>
+</html>
